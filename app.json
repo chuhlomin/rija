@@ -1,0 +1,8 @@
+{
+  "name": "JIRA Project list",
+  "description": "Based on code from the React tutorial",
+  "keywords": [ "react", "reactjs", "tutorial", "jira"],
+  "repository": "https://github.com/chuhlomin/rija",
+  "success_url": "/"
+}
+
