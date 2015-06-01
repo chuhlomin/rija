@@ -156,7 +156,7 @@ var ProjectsCategories = React.createClass({
       return 0;
     });
 
-    var projectsCategories = $.map(projectsCategoriesArray, function(data) {
+    var projectsCategories = projectsCategoriesArray.map(function(data) {
       return (
         <ProjectCategory key={data.name}
                          onUserInput={this.handleClick}
@@ -189,10 +189,11 @@ var ProjectCategory = React.createClass({
   },
   render: function () {
     return (
-      <div className={'b-project-category' + (this.props.data.selected ? ' b-project-category_selected' : '')}
-           onClick={this.handleClick}>
-        <span className="b-project-category__link" href="#">{this.props.data.name}</span>
-        {(this.props.data.count > 0) ? <span className="b-project-category__counter">{this.props.data.count}</span> : ''}
+      <div className={'b-project-category' + (this.props.data.selected ? ' b-project-category_selected' : '')}>
+        <span className="b-project-category__wrapper" onClick={this.handleClick}>
+          <span className="b-project-category__link" href="#">{this.props.data.name}</span>
+          {(this.props.data.count > 0) ? <span className="b-project-category__counter">{this.props.data.count}</span> : ''}
+        </span>
       </div>
     );
   }

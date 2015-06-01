@@ -1,0 +1,111 @@
+.b-projects-list {
+    margin-left: 230px;
+}
+
+.b-projects-list__search {
+    box-sizing: border-box;
+    display: block;
+    width: 700px;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px #eee inset;
+    -webkit-appearance:textfield;
+}
+.b-projects-list__search:focus {
+    outline: none;
+    border: 1px solid #08f;
+    box-shadow: 0 2px 5px #eee inset, 0 0 2px #08f;
+}
+
+.b-project {
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    height: 80px;
+    overflow: hidden;
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    box-shadow: 0 1px 3px #eee;
+    background: #f5f7f9;
+}
+
+.b-project_hidden {
+    display: none;
+}
+
+.b-project_hidden > * {
+    margin-top: -10000px;
+    transition: margin-top 0s 2s;
+}
+
+.b-project__category {
+    font-size: small;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.b-project__link {
+    font-weight: bold;
+}
+
+.b-projects-categories-list {
+    position: absolute;
+    width: 190px;
+}
+
+.b-project-category__wrapper {
+    display: inline-block;
+    padding: 0.33em 1em 0.33em 1em;
+    border-radius: 1.33em;
+    margin-left: -1em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.b-project-category__wrapper:hover {
+    background: #eee;
+}
+
+.b-project-category + .b-project-category {
+    font-size: small;
+}
+
+.b-project-category__link {
+    display: inline-block;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    color: #4183c4;
+}
+
+.b-project-category__counter {
+    margin-left: 0.33em;
+    margin-right: -0.4em;
+    padding: 0 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 1em;
+    color: #999;
+}
+
+.b-project-category_selected .b-project-category__wrapper,
+.b-project-category_selected .b-project-category__wrapper:hover {
+    background: #08f;
+    cursor: default;
+}
+
+.b-project-category_selected .b-project-category__link {
+    color: #fff;
+}
+
+.b-project-category_selected .b-project-category__counter {
+    border-color: #fff;
+    color: #fff;
+}
