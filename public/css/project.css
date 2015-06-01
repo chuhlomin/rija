@@ -1,0 +1,32 @@
+.b-project__header__name {
+    vertical-align: middle;
+    font-size: large;
+    font-weight: bold;
+    color: #333;
+}
+
+.b-project__header__key {
+    font-size: smaller;
+    font-weight: bold;
+    margin-right: 0.66em;
+    padding: 0.06em 0.3em;
+    border-radius: 6px;
+    color: #fff;
+    background: #bbb;
+    text-shadow: 0px -1px 0px rgb(153, 153, 153);
+    box-shadow: 0px -1px 0px rgb(153, 153, 153) inset, 0px 1px 0px #eee inset, 0px 1px 3px rgb(170, 170, 170);
+}
+
+.b-project__components {
+    margin-top: 1em;
+}
+
+.b-project__component {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 0.33em 1em;
+    display: inline-block;
+    color: #08f;
+    margin-right: 0.33em;
+    margin-bottom: 0.33em;
+}
