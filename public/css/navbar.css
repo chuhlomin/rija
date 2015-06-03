@@ -1,0 +1,38 @@
+.b-navbar {
+  margin: 0 auto 2em;
+  padding-bottom: 1em;
+  width: 952px;
+  border-bottom: 1px solid #eee;
+}
+
+.b-navbar__logo {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  text-align: center;
+  font-size: 24pt;
+  font-weight: 400;
+  color: #4183c4;
+}
+
+.b-navbar__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.b-navbar__menu.b-navbar__menu-right {
+  float: right;
+}
+
+.b-navbar__menu__element {
+  display: inline-block;
+  font-size: 14pt;
+  line-height: 18pt;
+}
+
+.b-navbar__menu__element + .b-navbar__menu__element {
+  margin-left: 1em;
+}

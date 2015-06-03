@@ -20,12 +20,12 @@ function routeRequest()
     if ($uri === '/') {
         echo file_get_contents('./public/projects.html');
     } elseif (preg_match('/\/projects.json(\?.*)?/', $uri)) {
-        echo file_get_contents('projects.json');
+        echo file_get_contents('./private/demo/projects.json');
 
     } elseif ($uri === '/project.html') {
         echo file_get_contents('./public/project.html');
     } elseif (preg_match('/\/project.json(\?.*)?/', $uri)) {
-        echo file_get_contents('project.json');
+        echo file_get_contents('./private/demo/project.json');
 
     } else {
         return false;

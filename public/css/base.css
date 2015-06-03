@@ -5,11 +5,13 @@ body {
   line-height: 1.7;
   margin: 0;
   padding: 30px;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   color: #4183c4;
   text-decoration: none;
+  text-shadow: 0 1px 1px #ddd;
 }
 
 a:hover {
@@ -65,3 +67,4 @@ ul {
   margin: 0 auto;
   width: 952px;
 }
+

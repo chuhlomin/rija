@@ -1,19 +1,24 @@
 .b-projects-list {
     margin-left: 230px;
+    margin-right: -1em;
+    position: relative;
+    padding-top: 3.33em;
 }
 
 .b-projects-list__search {
-    box-sizing: border-box;
-    display: block;
-    width: 700px;
-    margin-bottom: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 1em;
+
     padding: 0.5em 1em;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 100px;
     box-shadow: 0 2px 5px #eee inset;
-    -webkit-appearance:textfield;
+    -webkit-appearance: textfield;
 }
+
 .b-projects-list__search:focus {
     outline: none;
     border: 1px solid #08f;
@@ -23,7 +28,7 @@
 .b-project {
     display: inline-block;
     vertical-align: top;
-    width: 190px;
+    width: 198px;
     height: 80px;
     overflow: hidden;
     padding: 1em;
@@ -48,11 +53,13 @@
     font-size: small;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    color: #444;
+    text-shadow: 0 1px 0 #ddd;
 }
 
 .b-project__link {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .b-projects-categories-list {
@@ -103,6 +110,7 @@
 
 .b-project-category_selected .b-project-category__link {
     color: #fff;
+    text-shadow: 0 -1px 0 #999;
 }
 
 .b-project-category_selected .b-project-category__counter {
