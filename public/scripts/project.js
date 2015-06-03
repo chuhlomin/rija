@@ -73,6 +73,6 @@ var Project = React.createClass({
 });
 
 React.render(
-  <Project url="project.json" pollInterval={2000}/>,
+  <Project url="/project.json" pollInterval={2000}/>,
   document.getElementById('content')
 );

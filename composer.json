@@ -1,0 +1,15 @@
+{
+  "name": "chuhlomin/rija",
+  "description": "Frontend for JIRA API",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Konstantin Chukhlomin",
+      "email": "chuhlomin@gmail.com"
+    }
+  ],
+  "require": {
+    "silex/silex": "~1.2"
+  }
+}

@@ -200,6 +200,6 @@ var ProjectCategory = React.createClass({
 });
 
 React.render(
-  <ProjectsBox url="projects.json" pollInterval={2000}/>,
+  <ProjectsBox url="/projects.json" pollInterval={2000}/>,
   document.getElementById('content')
 );
